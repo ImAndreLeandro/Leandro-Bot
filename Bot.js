@@ -34,7 +34,7 @@ client.on("message", async message => {
 	}
 	
 	if (command == "help") {
-		await message.channel.send("I'm sorry but the bot is under a big maintenace!\n\n__**Reasons:**__\n**1**- Moving the bot to a host!\n**2-**- Recoding the bot to another language!\n**3**- Changing between databases!");
+		await message.channel.send("I'm sorry but the bot is under a big maintenace!\n\n__**Reasons:**__\n**1**- Moving the bot to a host!\n**2-**- Recoding the bot to another language!\n**3**- Changing between databases!\n\n__**Expected Time:**__\nNo time estimated!");
 	}
 
 });
