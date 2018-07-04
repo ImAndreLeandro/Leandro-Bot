@@ -7,7 +7,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
 	console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-	client.user.setActivity(`le!help (${client.guilds.size} servers)!`, {type: 'Watching'});
+	client.user.setActivity(`${client.guilds.size} servers! le!help`, {type: 'Watching'});
 	//const channel = client.channels.get('458252935172849688');
 	//if (!channel) return;
 	//channel.send("Hi");
