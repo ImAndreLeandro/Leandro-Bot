@@ -49,11 +49,7 @@ client.on("message", async message => {
 	}
 
 	if (command == "guilds") {
-		if (message.author.id == "197340056053219329") {
-			message.channel.send("a");
-		} else {
-			message.channel.send("b");
-		}
+		message.channel.send("**" + message.author.username + "**, I'm in a total of " + client.guilds.size + "guilds");
 	}
 
 });
