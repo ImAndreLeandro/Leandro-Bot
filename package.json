@@ -1,0 +1,9 @@
+{
+	"name": "LeandroBot",
+	"version": "1.0.0",
+	"description": "Simple Bot for every server!",
+	"main": "Bot.js",
+	"dependencies": {
+		"discord.js": "^11.3.2"
+	}
+}
