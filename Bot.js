@@ -9,7 +9,7 @@ client.on("ready", () => {
 	console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
 	client.user.setActivity(`${client.guilds.size} servers! le!help`, {type: 'Watching'});
 	setInterval(() => {
-		client.user.setActivity(`${client.guilds.size} guilds! | use le!help`, {type:"WATCHING"})
+		client.user.setActivity(`${client.guilds.size} servers! | use le!help`, {type:"WATCHING"})
     	setTimeout(() => {
   		client.user.setActivity(`${client.guilds.reduce((a, g) => a + g.memberCount, 0)} users! | use le!help`, {type:"WATCHING"})
 	}, 3000);
