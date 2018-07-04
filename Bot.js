@@ -42,6 +42,14 @@ client.on("message", async message => {
 		await message.channel.send({embed});
 	}
 
+	if (command == "guilds") {
+		if (message.author.id == "197340056053219329") {
+			message.channel.send("a");
+		} else {
+			message.channel.send("b");
+		}
+	}
+
 });
 
 client.login(process.env.TOKEN);
