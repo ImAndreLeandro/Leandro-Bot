@@ -8,6 +8,12 @@ const config = require("./config.json");
 client.on("ready", () => {
 	console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
 	client.user.setActivity(`${client.guilds.size} servers! le!help`, {type: 'Watching'});
+	setInterval(() => {
+		bot.user.setActivity(`${bot.guilds.size} guilds! | use t!help`, {type:"WATCHING"})
+    	setTimeout(() => {
+  		bot.user.setActivity(`${bot.guilds.reduce((a, g) => a + g.memberCount, 0)} users! | use t!help`, {type:"WATCHING"})
+	}, 3000);
+}, 6000);
 	//const channel = client.channels.get('458252935172849688');
 	//if (!channel) return;
 	//channel.send("Hi");
