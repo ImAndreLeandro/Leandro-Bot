@@ -41,7 +41,7 @@ client.on("message", async message => {
 	
 	if (command == "help") {
 		const embed = {
-			description: "I'm sorry but the bot is under a big maintenace!\n\n__**Reasons:**__\n**1**- Moving the bot to a host!\n**2**- Recoding the bot to another language!\n**3**- Changing between databases!\n\n__**Expected Time:**__\nNo time estimated!",
+			description: "I'm sorry but the bot is under a big maintenance!\n\n__**Reasons:**__\n**1**- Moving the bot to a host!\n**2**- Recoding the bot to another language!\n**3**- Changing between databases!\n\n__**Expected Time:**__\nNo time estimated!",
 			color: 569815,
       		timestamp: new Date()
 		};
