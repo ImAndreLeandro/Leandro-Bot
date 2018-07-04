@@ -23,7 +23,7 @@ client.on("message", async message => {
 		const m = await message.channel.send("Calculating...");
 		const embed = {
 			author: {
-				name: `📈 Latency!`,
+				name: `?? Latency!`,
 				icon_url: client.user.avatarURL
 			},
 			description: `Pong! :ping_pong: \nLatency is **${m.createdTimestamp - message.createdTimestamp}**ms.\nAPI Latency is **${Math.round(client.ping)}**ms.`,
@@ -34,7 +34,12 @@ client.on("message", async message => {
 	}
 	
 	if (command == "help") {
-		await message.channel.send("I'm sorry but the bot is under a big maintenace!\n\n__**Reasons:**__\n**1**- Moving the bot to a host!\n**2**- Recoding the bot to another language!\n**3**- Changing between databases!\n\n__**Expected Time:**__\nNo time estimated!");
+		const embed = {
+			description: "I'm sorry but the bot is under a big maintenace!\n\n__**Reasons:**__\n**1**- Moving the bot to a host!\n**2**- Recoding the bot to another language!\n**3**- Changing between databases!\n\n__**Expected Time:**__\nNo time estimated!",
+			color: 569815,
+      		timestamp: new Date()
+		};
+		await message.channel.send({embed});
 	}
 
 });
