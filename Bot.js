@@ -51,6 +51,16 @@ client.on("message", async message => {
 	if (command == "guilds") {
 		message.channel.send("**" + message.author.username + "**, I'm in a total of " + client.guilds.size + "guilds");
 	}
+	
+	if (command === "avatar) {
+	    let user = message.mentions.users.first() || message.author;
+		let embed = new Discord.RichEmbed()
+		    .setAuthor(`${user.username}`)
+		    .setImage(user.displayAvatarURL)
+		    .setColor('RANDOM');
+
+ 		message.channel.send(embed);
+	}
 
 });
 
